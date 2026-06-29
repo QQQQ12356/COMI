@@ -149,15 +149,6 @@ Results are written under `${OUTPUT_DIR}/eval_result/`:
 
 Additional model switches such as `--coarse_grained_on`, `--fine_grained_on`, `--redun_coarse`, `--redun_fine`, LoRA targets, and trainability controls can be passed to `train.sh`.
 
-## Checkpoints and Tests
-
-Training writes Hugging Face Trainer checkpoints and a final `model.safetensors` under `OUTPUT_DIR`. Existing checkpoints can be resumed with `--resume_from_checkpoint` or initialized through `--restore_from`.
-
-Run the test script:
-
-```bash
-bash test.sh
-```
 
 ## BibTeX
 If you find our repo helpful, please consider leaving a star and cite our paper
